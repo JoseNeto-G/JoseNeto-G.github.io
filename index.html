@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>José Gonçalves Neto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<meta name="description" content="José Gonçalves Neto — engenheiro eletricista e desenvolvedor de software. Sistemas web, aplicativos mobile e automações sob medida.">
+<style>
+  :root {
+    --bg: #F8F6F1;
+    --bg-alt: #FFFFFF;
+    --ink: #1C2331;
+    --ink-soft: #4E5666;
+    --ink-faint: #93917F;
+    --accent: #A9822F;
+    --accent-strong: #7C5D22;
+    --accent-ink: #F8F6F1;
+    --border: #E4E0D5;
+    --border-strong: #D2CBB9;
+    --shadow: rgba(28, 35, 49, 0.08);
+    --card: #FFFFFF;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181F;
+      --bg-alt: #1B212B;
+      --ink: #ECE9E2;
+      --ink-soft: #ABA9A0;
+      --ink-faint: #74726A;
+      --accent: #D3A94E;
+      --accent-strong: #C9A24C;
+      --accent-ink: #1A1506;
+      --border: #2B313B;
+      --border-strong: #3A4150;
+      --shadow: rgba(0, 0, 0, 0.5);
+      --card: #1B212B;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #14181F;
+    --bg-alt: #1B212B;
+    --ink: #ECE9E2;
+    --ink-soft: #ABA9A0;
+    --ink-faint: #74726A;
+    --accent: #D3A94E;
+    --accent-strong: #C9A24C;
+    --accent-ink: #1A1506;
+    --border: #2B313B;
+    --border-strong: #3A4150;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --card: #1B212B;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  a { color: inherit; }
+
+  .eyebrow {
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+  }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    text-wrap: balance;
+    color: var(--ink);
+    margin: 0;
+  }
+
+  em { font-family: "Fraunces", Georgia, serif; font-style: italic; color: var(--accent-strong); }
+  :root:not([data-theme="light"]) em { color: var(--accent); }
+  :root[data-theme="dark"] em { color: var(--accent); }
+
+  /* header */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 90%, transparent);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+  }
+  .site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    gap: 16px;
+  }
+  .brand {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  nav.site-nav {
+    display: flex;
+    gap: 30px;
+    font-size: 0.86rem;
+    letter-spacing: 0.02em;
+  }
+  nav.site-nav a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  nav.site-nav a:hover, nav.site-nav a:focus-visible {
+    color: var(--ink);
+    border-color: var(--accent);
+  }
+
+  /* hero */
+  .hero { border-bottom: 1px solid var(--border); }
+  .hero .wrap {
+    padding: 110px 32px 100px;
+    max-width: 720px;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 3.6rem);
+    line-height: 1.12;
+    font-weight: 500;
+  }
+  .hero p.lede {
+    font-size: 1.14rem;
+    color: var(--ink-soft);
+    max-width: 52ch;
+    margin: 26px 0 0;
+  }
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 38px;
+  }
+  .btn-primary {
+    display: inline-block;
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 14px 28px;
+    background: var(--accent-strong);
+    color: var(--accent-ink);
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .btn-primary:hover { transform: translateY(-1px); }
+  .link-arrow {
+    font-size: 0.92rem;
+    text-decoration: none;
+    color: var(--ink);
+    border-bottom: 1px solid var(--border-strong);
+    padding-bottom: 2px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .link-arrow:hover { border-color: var(--ink); }
+
+  .credo {
+    margin-top: 40px;
+    font-size: 0.86rem;
+    color: var(--ink-faint);
+    letter-spacing: 0.03em;
+  }
+  .credo span:not(:last-child)::after {
+    content: "·";
+    margin: 0 10px;
+    color: var(--border-strong);
+  }
+
+  section { padding: 92px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+
+  .section-head { margin-bottom: 48px; max-width: 620px; }
+  .section-head .eyebrow { display: block; margin-bottom: 10px; }
+  .section-head h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
+  .section-head p.section-note { color: var(--ink-faint); font-size: 0.96rem; margin: 14px 0 0; max-width: 46ch; }
+
+  /* about */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 56px;
+  }
+  .about-grid p { color: var(--ink-soft); margin: 0 0 18px; max-width: 58ch; }
+  .about-grid p:last-child { margin-bottom: 0; }
+  .credentials {
+    border-left: 1px solid var(--border-strong);
+    padding-left: 26px;
+    display: grid;
+    gap: 22px;
+  }
+  .credentials dt {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-faint);
+    margin: 0 0 5px;
+  }
+  .credentials dd { margin: 0; font-size: 1rem; color: var(--ink); font-family: "Fraunces", serif; font-weight: 400; }
+
+  /* services */
+  .service-list { display: grid; }
+  .service-row {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 28px;
+    padding: 34px 0;
+    border-top: 1px solid var(--border);
+  }
+  .service-row:last-child { border-bottom: 1px solid var(--border); }
+  .service-num {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--accent-strong);
+  }
+  :root:not([data-theme="light"]) .service-num { color: var(--accent); }
+  :root[data-theme="dark"] .service-num { color: var(--accent); }
+  .service-row h3 { font-size: 1.35rem; font-weight: 500; margin-bottom: 8px; }
+  .service-row p { margin: 0 0 12px; color: var(--ink-soft); max-width: 56ch; }
+  .service-row .stack {
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+
+  /* process */
+  .process-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .step { border-top: 1px solid var(--border-strong); padding-top: 22px; }
+  .step .num {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 1.7rem;
+    color: var(--ink-faint);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .step h3 { font-size: 1.02rem; font-weight: 500; margin-bottom: 8px; }
+  .step p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  /* portfolio */
+  .repo-list { display: grid; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+  .repo-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    padding: 26px 28px;
+    background: var(--card);
+    transition: background 0.15s ease;
+  }
+  .repo-card:hover, .repo-card:focus-visible { background: var(--bg); }
+  .repo-card h3 { font-size: 1.15rem; font-weight: 500; margin-bottom: 6px; }
+  .repo-card p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+  .repo-card .go { font-size: 0.85rem; color: var(--ink-faint); white-space: nowrap; }
+  .portfolio-more { margin-top: 26px; }
+
+  /* contact */
+  .contact-block h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); max-width: 14ch; margin-bottom: 20px; }
+  .contact-block p.lede { color: var(--ink-soft); max-width: 48ch; margin: 0 0 44px; }
+  .contact-links { display: grid; }
+  .contact-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 2px;
+    border-top: 1px solid var(--border);
+    color: var(--ink);
+    font-family: "Fraunces", serif;
+    font-size: 1.15rem;
+    transition: color 0.15s ease;
+  }
+  .contact-links a:last-child { border-bottom: 1px solid var(--border); }
+  .contact-links a .go { font-family: "Work Sans", sans-serif; font-size: 0.85rem; color: var(--ink-faint); }
+  .contact-links a:hover { color: var(--accent-strong); }
+  :root:not([data-theme="light"]) .contact-links a:hover { color: var(--accent); }
+  :root[data-theme="dark"] .contact-links a:hover { color: var(--accent); }
+
+  footer {
+    padding: 32px 0 44px;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer a { color: var(--ink-faint); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 860px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .about-grid .credentials { border-left: none; padding-left: 0; border-top: 1px solid var(--border-strong); padding-top: 22px; }
+    .process-list { grid-template-columns: repeat(2, 1fr); }
+    nav.site-nav { display: none; }
+    .repo-card { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">José Neto</a>
+    <nav class="site-nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Desenvolvimento sob medida — Web, App e Automação</span>
+      <h1 style="margin-top:18px;">Engenharia de precisão,<br><em>agora em software.</em></h1>
+      <p class="lede">Sou José Gonçalves Neto, engenheiro eletricista com vivência em automação industrial e sistemas críticos. Uso essa mesma exigência técnica para construir sites, aplicativos e automações que resolvem problemas reais do seu negócio.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#portfolio">Ver portfólio</a>
+        <a class="link-arrow" href="#contato">Falar sobre um projeto →</a>
+      </div>
+      <p class="credo">
+        <span>Engenharia Elétrica</span><span>Automação</span><span>Software</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Sobre</span>
+        <h2>Rigor de engenharia, aplicado a código.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>Antes de escrever a primeira linha de código, passei anos projetando e mantendo sistemas onde erro não é opção: automação industrial, SCADA e infraestrutura crítica. Essa disciplina — testar antes de entregar, documentar cada decisão, pensar em falhas antes que elas aconteçam — é a base de como desenvolvo software hoje.</p>
+          <p>Trabalho em três frentes: sistemas web, aplicativos mobile e automações. Cada projeto sai com escopo e valor fechados por escrito, para que você saiba exatamente o que está contratando.</p>
+        </div>
+        <dl class="credentials">
+          <div>
+            <dt>Formação</dt>
+            <dd>Engenharia Elétrica, com pós-graduação em andamento</dd>
+          </div>
+          <div>
+            <dt>Experiência técnica</dt>
+            <dd>Automação industrial, SCADA, Java, Python</dd>
+          </div>
+          <div>
+            <dt>Stack de desenvolvimento</dt>
+            <dd>Node.js, React, React Native, Python</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Serviços</span>
+        <h2>Três frentes, um mesmo padrão de entrega.</h2>
+        <p class="section-note">Cada frente tem um projeto de portfólio real, aberto e funcional, linkado adiante.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-row">
+          <span class="service-num">I.</span>
+          <div>
+            <h3>Sistemas &amp; sites</h3>
+            <p>Sites institucionais, painéis administrativos e sistemas web sob medida — do levantamento de requisitos ao ar, com atenção especial ao design quando a experiência de compra ou de uso for parte do resultado.</p>
+            <span class="stack">Node.js · React · REST API</span>
+          </div>
+        </div>
+        <div class="service-row">
+          <span class="service-num">II.</span>
+          <div>
+            <h3>Aplicativos mobile</h3>
+            <p>Apps para Android e iOS, especialmente para equipes que trabalham em campo e precisam de dados em tempo real.</p>
+            <span class="stack">React Native · Expo · Integração via API</span>
+          </div>
+        </div>
+        <div class="service-row">
+          <span class="service-num">III.</span>
+          <div>
+            <h3>Automações &amp; bots</h3>
+            <p>Chatbots de atendimento e automações que tiram tarefas repetitivas da rotina da sua equipe.</p>
+            <span class="stack">Python · Telegram / WhatsApp · Integrações</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="processo">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Do primeiro contato à entrega.</h2>
+      </div>
+      <div class="process-list">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Conversa inicial</h3>
+          <p>Entendo o problema, o contexto do seu negócio e o que o projeto precisa resolver.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Proposta &amp; contrato</h3>
+          <p>Escopo, prazo e valor fechados por escrito antes de qualquer linha de código.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Desenvolvimento</h3>
+          <p>Construção com pontos de checagem, para você acompanhar o progresso real.</p>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <h3>Entrega &amp; suporte</h3>
+          <p>Entrega documentada, com suporte combinado para os ajustes do dia a dia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Portfólio</span>
+        <h2>Projetos reais, código aberto.</h2>
+        <p class="section-note">Um sistema completo: painel web para a equipe, app para quem está em campo, e bot para o autoatendimento do cliente.</p>
+      </div>
+      <div class="repo-list">
+        <a class="repo-card" href="https://github.com/JoseNeto-G/gestao-ordens-servico" target="_blank" rel="noopener">
+          <div>
+            <h3>gestao-ordens-servico</h3>
+            <p>Painel web para gestão de ordens de serviço: clientes, chamados e status, com autenticação. Node.js + React.</p>
+          </div>
+          <span class="go">Ver no GitHub →</span>
+        </a>
+        <a class="repo-card" href="https://github.com/JoseNeto-G/app-ordens-servico" target="_blank" rel="noopener">
+          <div>
+            <h3>app-ordens-servico</h3>
+            <p>App mobile para técnicos de campo acompanharem e atualizarem ordens de serviço. React Native.</p>
+          </div>
+          <span class="go">Ver no GitHub →</span>
+        </a>
+        <a class="repo-card" href="https://github.com/JoseNeto-G/bot-ordens-servico" target="_blank" rel="noopener">
+          <div>
+            <h3>bot-ordens-servico</h3>
+            <p>Bot de atendimento via Telegram que responde dúvidas e consulta o status das ordens. Python.</p>
+          </div>
+          <span class="go">Ver no GitHub →</span>
+        </a>
+      </div>
+      <p class="portfolio-more"><a class="link-arrow" href="https://github.com/JoseNeto-G" target="_blank" rel="noopener">Ver todos os projetos no GitHub →</a></p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap contact-block">
+      <span class="eyebrow">Contato</span>
+      <h2 style="margin-top:14px;">Vamos conversar sobre o seu projeto.</h2>
+      <p class="lede">Me conte o que você precisa — web, app ou automação — e eu retorno com os próximos passos e uma proposta com escopo e valor fechados.</p>
+      <div class="contact-links">
+        <a href="mailto:netojosegoncalves20@gmail.com">
+          <span>netojosegoncalves20@gmail.com</span>
+          <span class="go">e-mail</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jose-neto-goncalves/" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <span class="go">perfil</span>
+        </a>
+        <a href="https://github.com/JoseNeto-G" target="_blank" rel="noopener">
+          <span>GitHub</span>
+          <span class="go">projetos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
+    <span>© 2026 José Gonçalves Neto</span>
+    <span><a href="#top">Voltar ao topo</a></span>
+  </div>
+</footer>
+</body>
+</html>
