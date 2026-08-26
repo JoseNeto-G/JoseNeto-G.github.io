@@ -4,342 +4,342 @@
 <meta charset="UTF-8">
 <title>José Gonçalves Neto</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="José Gonçalves Neto — engenheiro eletricista e desenvolvedor de software. Sistemas web, aplicativos mobile e automações sob medida.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="José Gonçalves Neto — engenheiro eletricista e desenvolvedor de software. Sistemas web, aplicativos mobile e automações sob medida.">
 <style>
   :root {
-    --bg: #F8F6F1;
-    --bg-alt: #FFFFFF;
-    --ink: #1C2331;
-    --ink-soft: #4E5666;
-    --ink-faint: #93917F;
-    --accent: #A9822F;
-    --accent-strong: #7C5D22;
-    --accent-ink: #F8F6F1;
-    --border: #E4E0D5;
-    --border-strong: #D2CBB9;
-    --shadow: rgba(28, 35, 49, 0.08);
+    --bg: #F7F8FE;
+    --bg-soft: #EFF1FC;
     --card: #FFFFFF;
+    --ink: #262B4A;
+    --ink-soft: #5B6089;
+    --ink-faint: #9297B8;
+    --accent: #7C8AEF;
+    --accent-strong: #5A67D8;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #E4E8FC;
+    --lilac-soft: #EDE4FC;
+    --lilac: #9B7FE0;
+    --teal-soft: #DCF3EE;
+    --teal: #3FA88B;
+    --border: #E4E7F7;
+    --border-strong: #CDD3F2;
+    --shadow: rgba(66, 71, 130, 0.10);
+    --shadow-soft: rgba(66, 71, 130, 0.06);
   }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #14181F;
-      --bg-alt: #1B212B;
-      --ink: #ECE9E2;
-      --ink-soft: #ABA9A0;
-      --ink-faint: #74726A;
-      --accent: #D3A94E;
-      --accent-strong: #C9A24C;
-      --accent-ink: #1A1506;
-      --border: #2B313B;
-      --border-strong: #3A4150;
-      --shadow: rgba(0, 0, 0, 0.5);
-      --card: #1B212B;
+      --bg: #14162A;
+      --bg-soft: #1B1E3A;
+      --card: #1D2040;
+      --ink: #E7E9FA;
+      --ink-soft: #ADB1D8;
+      --ink-faint: #6D7099;
+      --accent: #9AA8FF;
+      --accent-strong: #8792F5;
+      --accent-ink: #14162A;
+      --accent-soft: #2A2E58;
+      --lilac-soft: #2E2650;
+      --lilac: #B49CEE;
+      --teal-soft: #1B342F;
+      --teal: #5CC4A6;
+      --border: #2A2E52;
+      --border-strong: #383D6B;
+      --shadow: rgba(0, 0, 0, 0.35);
+      --shadow-soft: rgba(0, 0, 0, 0.22);
     }
   }
 
   :root[data-theme="dark"] {
-    --bg: #14181F;
-    --bg-alt: #1B212B;
-    --ink: #ECE9E2;
-    --ink-soft: #ABA9A0;
-    --ink-faint: #74726A;
-    --accent: #D3A94E;
-    --accent-strong: #C9A24C;
-    --accent-ink: #1A1506;
-    --border: #2B313B;
-    --border-strong: #3A4150;
-    --shadow: rgba(0, 0, 0, 0.5);
-    --card: #1B212B;
+    --bg: #14162A;
+    --bg-soft: #1B1E3A;
+    --card: #1D2040;
+    --ink: #E7E9FA;
+    --ink-soft: #ADB1D8;
+    --ink-faint: #6D7099;
+    --accent: #9AA8FF;
+    --accent-strong: #8792F5;
+    --accent-ink: #14162A;
+    --accent-soft: #2A2E58;
+    --lilac-soft: #2E2650;
+    --lilac: #B49CEE;
+    --teal-soft: #1B342F;
+    --teal: #5CC4A6;
+    --border: #2A2E52;
+    --border-strong: #383D6B;
+    --shadow: rgba(0, 0, 0, 0.35);
+    --shadow-soft: rgba(0, 0, 0, 0.22);
   }
 
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    * { transition-duration: 0.001ms !important; }
+    * { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important; }
   }
 
   body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 17px;
     line-height: 1.65;
   }
 
-  .wrap {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 32px;
-  }
-
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
   a { color: inherit; }
-
-  .eyebrow {
-    font-family: "Work Sans", sans-serif;
-    font-size: 0.78rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    font-weight: 500;
-  }
+  svg { display: block; }
 
   h1, h2, h3 {
-    font-family: "Fraunces", Georgia, serif;
-    font-weight: 500;
+    font-family: "Sora", -apple-system, sans-serif;
+    font-weight: 700;
     text-wrap: balance;
     color: var(--ink);
     margin: 0;
   }
 
-  em { font-family: "Fraunces", Georgia, serif; font-style: italic; color: var(--accent-strong); }
-  :root:not([data-theme="light"]) em { color: var(--accent); }
-  :root[data-theme="dark"] em { color: var(--accent); }
+  .eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+    font-weight: 700;
+  }
+
+  /* icon badge */
+  .icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    flex-shrink: 0;
+  }
+  .icon-badge.lilac { background: var(--lilac-soft); color: var(--lilac); }
+  .icon-badge.teal { background: var(--teal-soft); color: var(--teal); }
+  .icon-badge svg { width: 22px; height: 22px; }
+
+  .mini-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    flex-shrink: 0;
+  }
+
+  /* brand mark */
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand .mark {
+    width: 34px; height: 34px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Sora", sans-serif; font-weight: 800; font-size: 0.82rem; color: #fff;
+    position: relative;
+  }
+  .brand .mark::after {
+    content: ""; position: absolute; top: 6px; right: 7px;
+    width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.85);
+  }
+  .brand .name { font-family: "Sora", sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--ink); }
 
   /* header */
   .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background: color-mix(in srgb, var(--bg) 90%, transparent);
-    backdrop-filter: blur(6px);
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
   }
-  .site-header .wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    gap: 16px;
-  }
-  .brand {
-    font-family: "Fraunces", serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-decoration: none;
-  }
-  nav.site-nav {
-    display: flex;
-    gap: 30px;
-    font-size: 0.86rem;
-    letter-spacing: 0.02em;
-  }
-  nav.site-nav a {
-    text-decoration: none;
-    color: var(--ink-soft);
-    padding-bottom: 3px;
-    border-bottom: 1px solid transparent;
-    transition: color 0.15s ease, border-color 0.15s ease;
-  }
-  nav.site-nav a:hover, nav.site-nav a:focus-visible {
-    color: var(--ink);
-    border-color: var(--accent);
-  }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 74px; gap: 16px; }
+  nav.site-nav { display: flex; gap: 30px; font-size: 0.88rem; font-weight: 600; }
+  nav.site-nav a { text-decoration: none; color: var(--ink-soft); padding-bottom: 3px; border-bottom: 2px solid transparent; transition: color 0.15s ease, border-color 0.15s ease; }
+  nav.site-nav a:hover, nav.site-nav a:focus-visible { color: var(--ink); border-color: var(--accent); }
 
   /* hero */
-  .hero { border-bottom: 1px solid var(--border); }
-  .hero .wrap {
-    padding: 110px 32px 100px;
-    max-width: 720px;
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .hero-blob {
+    position: absolute; border-radius: 50%; filter: blur(60px); z-index: 0; opacity: 0.55;
   }
-  .hero h1 {
-    font-size: clamp(2.4rem, 5.2vw, 3.6rem);
-    line-height: 1.12;
-    font-weight: 500;
-  }
-  .hero p.lede {
-    font-size: 1.14rem;
-    color: var(--ink-soft);
-    max-width: 52ch;
-    margin: 26px 0 0;
-  }
-  .hero-actions {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin-top: 38px;
-  }
+  .hero-blob.b1 { width: 420px; height: 420px; background: var(--accent-soft); top: -160px; right: -120px; }
+  .hero-blob.b2 { width: 320px; height: 320px; background: var(--lilac-soft); bottom: -140px; right: 260px; }
+  :root[data-theme="dark"] .hero-blob, :root:not([data-theme="light"]) .hero-blob { opacity: 0.35; }
+
+  .hero .wrap { position: relative; z-index: 1; padding: 100px 32px 90px; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 50px; align-items: center; }
+  .hero h1 { font-size: clamp(2.3rem, 4.4vw, 3.15rem); line-height: 1.14; }
+  .hero h1 .accent-text { color: var(--accent-strong); }
+  .hero p.lede { font-size: 1.1rem; color: var(--ink-soft); max-width: 52ch; margin: 22px 0 0; }
+  .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 36px; }
   .btn-primary {
-    display: inline-block;
-    font-size: 0.92rem;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    padding: 14px 28px;
-    background: var(--accent-strong);
-    color: var(--accent-ink);
-    transition: background 0.15s ease, transform 0.15s ease;
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: "Sora", sans-serif; font-weight: 700; font-size: 0.92rem;
+    text-decoration: none; padding: 14px 26px; border-radius: 12px;
+    background: var(--accent-strong); color: var(--accent-ink);
+    box-shadow: 0 10px 24px -8px var(--shadow);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .btn-primary:hover { transform: translateY(-1px); }
-  .link-arrow {
-    font-size: 0.92rem;
-    text-decoration: none;
-    color: var(--ink);
-    border-bottom: 1px solid var(--border-strong);
-    padding-bottom: 2px;
-    transition: border-color 0.15s ease, color 0.15s ease;
-  }
-  .link-arrow:hover { border-color: var(--ink); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -8px var(--shadow); }
+  .link-ghost { font-weight: 700; font-size: 0.92rem; text-decoration: none; color: var(--ink); border-bottom: 2px solid var(--border-strong); padding-bottom: 3px; transition: border-color 0.15s ease, color 0.15s ease; }
+  .link-ghost:hover { border-color: var(--accent-strong); color: var(--accent-strong); }
 
-  .credo {
-    margin-top: 40px;
-    font-size: 0.86rem;
-    color: var(--ink-faint);
-    letter-spacing: 0.03em;
-  }
-  .credo span:not(:last-child)::after {
-    content: "·";
-    margin: 0 10px;
-    color: var(--border-strong);
+  .credo { margin-top: 42px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .credo span {
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.02em;
+    color: var(--ink-soft); background: var(--card); border: 1px solid var(--border);
+    padding: 7px 14px; border-radius: 100px;
   }
 
-  section { padding: 92px 0; border-bottom: 1px solid var(--border); }
+  /* hero visual: mini browser mockup */
+  .hero-visual { position: relative; }
+  .mock-window {
+    background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+    box-shadow: 0 30px 60px -20px var(--shadow); overflow: hidden;
+  }
+  .mock-topbar { display: flex; align-items: center; gap: 6px; padding: 12px 14px; border-bottom: 1px solid var(--border); background: var(--bg-soft); }
+  .mock-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border-strong); }
+  .mock-address { margin-left: 10px; font-size: 0.72rem; color: var(--ink-faint); background: var(--card); border: 1px solid var(--border); border-radius: 100px; padding: 3px 12px; }
+  .mock-body { padding: 20px; }
+  .mock-heading { font-family: "Sora", sans-serif; font-weight: 700; font-size: 0.98rem; margin-bottom: 14px; }
+  .mock-row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; padding: 11px 12px; border-radius: 10px; background: var(--bg-soft); margin-bottom: 8px; }
+  .mock-client { font-size: 0.84rem; font-weight: 600; }
+  .mock-sub { font-size: 0.72rem; color: var(--ink-faint); margin-top: 2px; }
+  .pill { font-size: 0.68rem; font-weight: 700; padding: 4px 10px; border-radius: 100px; white-space: nowrap; }
+  .pill.blue { background: var(--accent-soft); color: var(--accent-strong); }
+  .pill.lilac { background: var(--lilac-soft); color: var(--lilac); }
+  .pill.teal { background: var(--teal-soft); color: var(--teal); }
+  .float-card {
+    position: absolute; background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; box-shadow: 0 20px 40px -16px var(--shadow); padding: 12px 16px;
+    display: flex; align-items: center; gap: 10px; font-size: 0.78rem; font-weight: 700;
+  }
+  .float-card.fc1 { top: -22px; left: -22px; }
+  .float-card.fc2 { bottom: -20px; right: -14px; }
+  @media (max-width: 900px) { .float-card { display: none; } }
+
+  section { padding: 96px 0; border-bottom: 1px solid var(--border); }
   section:last-of-type { border-bottom: none; }
 
-  .section-head { margin-bottom: 48px; max-width: 620px; }
-  .section-head .eyebrow { display: block; margin-bottom: 10px; }
-  .section-head h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); }
-  .section-head p.section-note { color: var(--ink-faint); font-size: 0.96rem; margin: 14px 0 0; max-width: 46ch; }
+  .section-head { margin-bottom: 50px; max-width: 640px; }
+  .section-head .eyebrow { display: block; margin-bottom: 12px; }
+  .section-head h2 { font-size: clamp(1.7rem, 3vw, 2.15rem); }
+  .section-head p.section-note { color: var(--ink-faint); font-size: 0.98rem; margin: 14px 0 0; max-width: 48ch; }
 
   /* about */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 56px;
-  }
+  .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; }
   .about-grid p { color: var(--ink-soft); margin: 0 0 18px; max-width: 58ch; }
   .about-grid p:last-child { margin-bottom: 0; }
-  .credentials {
-    border-left: 1px solid var(--border-strong);
-    padding-left: 26px;
-    display: grid;
-    gap: 22px;
+  .credentials { display: grid; gap: 18px; }
+  .credential-row {
+    display: flex; align-items: flex-start; gap: 14px; background: var(--card);
+    border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px;
   }
-  .credentials dt {
-    font-size: 0.74rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--ink-faint);
-    margin: 0 0 5px;
-  }
-  .credentials dd { margin: 0; font-size: 1rem; color: var(--ink); font-family: "Fraunces", serif; font-weight: 400; }
+  .credential-row dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); margin: 0 0 4px; font-weight: 700; }
+  .credential-row dd { margin: 0; font-size: 0.95rem; color: var(--ink); font-weight: 600; }
 
   /* services */
-  .service-list { display: grid; }
-  .service-row {
-    display: grid;
-    grid-template-columns: 64px 1fr;
-    gap: 28px;
-    padding: 34px 0;
-    border-top: 1px solid var(--border);
+  .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .service-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    padding: 28px 26px; box-shadow: 0 16px 32px -22px var(--shadow-soft);
+    display: flex; flex-direction: column; gap: 16px;
   }
-  .service-row:last-child { border-bottom: 1px solid var(--border); }
-  .service-num {
-    font-family: "Fraunces", serif;
-    font-style: italic;
-    font-size: 1.6rem;
-    color: var(--accent-strong);
-  }
-  :root:not([data-theme="light"]) .service-num { color: var(--accent); }
-  :root[data-theme="dark"] .service-num { color: var(--accent); }
-  .service-row h3 { font-size: 1.35rem; font-weight: 500; margin-bottom: 8px; }
-  .service-row p { margin: 0 0 12px; color: var(--ink-soft); max-width: 56ch; }
-  .service-row .stack {
-    font-size: 0.82rem;
-    letter-spacing: 0.03em;
-    color: var(--ink-faint);
-    text-transform: uppercase;
-  }
+  .service-card h3 { font-size: 1.18rem; }
+  .service-card p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; flex-grow: 1; }
+  .service-card .stack { display: flex; flex-wrap: wrap; gap: 6px; }
+  .service-card .stack span { font-size: 0.7rem; font-weight: 700; color: var(--ink-faint); background: var(--bg-soft); border-radius: 100px; padding: 4px 10px; }
 
   /* process */
-  .process-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-  .step { border-top: 1px solid var(--border-strong); padding-top: 22px; }
-  .step .num {
-    font-family: "Fraunces", serif;
-    font-style: italic;
-    font-size: 1.7rem;
-    color: var(--ink-faint);
-    display: block;
-    margin-bottom: 12px;
-  }
-  .step h3 { font-size: 1.02rem; font-weight: 500; margin-bottom: 8px; }
-  .step p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+  .process-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  .step { display: flex; flex-direction: column; gap: 14px; }
+  .step h3 { font-size: 1.02rem; }
+  .step p { margin: 0; color: var(--ink-soft); font-size: 0.88rem; }
 
-  /* portfolio */
-  .repo-list { display: grid; gap: 1px; background: var(--border); border: 1px solid var(--border); }
-  .repo-card {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none;
-    padding: 26px 28px;
-    background: var(--card);
-    transition: background 0.15s ease;
+  /* portfolio mockups */
+  .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .portfolio-card { display: flex; flex-direction: column; gap: 18px; }
+  .portfolio-frame {
+    background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+    box-shadow: 0 20px 40px -22px var(--shadow); overflow: hidden; height: 240px;
   }
-  .repo-card:hover, .repo-card:focus-visible { background: var(--bg); }
-  .repo-card h3 { font-size: 1.15rem; font-weight: 500; margin-bottom: 6px; }
-  .repo-card p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
-  .repo-card .go { font-size: 0.85rem; color: var(--ink-faint); white-space: nowrap; }
-  .portfolio-more { margin-top: 26px; }
+  .portfolio-info h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .portfolio-info p { margin: 0 0 10px; color: var(--ink-soft); font-size: 0.88rem; }
+  .portfolio-info a { font-size: 0.84rem; font-weight: 700; text-decoration: none; color: var(--accent-strong); display: inline-flex; align-items: center; gap: 5px; }
+  .portfolio-info a:hover { text-decoration: underline; }
+
+  /* browser frame */
+  .frame-browser .mock-topbar { padding: 10px 12px; }
+  .frame-browser .mock-body { padding: 14px; }
+  .frame-browser .mock-row { padding: 8px 10px; margin-bottom: 6px; }
+  .frame-browser .mock-client { font-size: 0.76rem; }
+  .frame-browser .mock-sub { display: none; }
+
+  /* phone frame */
+  .frame-phone { display: flex; align-items: center; justify-content: center; padding: 14px 0; }
+  .phone-shell {
+    width: 148px; height: 212px; border-radius: 22px; background: var(--bg-soft);
+    border: 1px solid var(--border); padding: 10px 9px; display: flex; flex-direction: column; gap: 7px;
+  }
+  .phone-notch { width: 34px; height: 4px; border-radius: 100px; background: var(--border-strong); margin: 0 auto 4px; }
+  .phone-card { background: var(--card); border-radius: 10px; padding: 8px 9px; display: flex; flex-direction: column; gap: 4px; }
+  .phone-card .name { font-size: 0.66rem; font-weight: 700; }
+  .phone-pill { font-size: 0.58rem; font-weight: 700; padding: 2px 7px; border-radius: 100px; align-self: flex-start; }
+
+  /* chat frame */
+  .frame-chat .mock-body { padding: 16px; display: flex; flex-direction: column; gap: 10px; height: 100%; justify-content: center; }
+  .chat-bubble { max-width: 78%; padding: 9px 13px; border-radius: 14px; font-size: 0.78rem; line-height: 1.4; }
+  .chat-bubble.bot { background: var(--bg-soft); border-bottom-left-radius: 4px; align-self: flex-start; color: var(--ink); }
+  .chat-bubble.user { background: var(--accent-strong); color: var(--accent-ink); border-bottom-right-radius: 4px; align-self: flex-end; }
 
   /* contact */
-  .contact-block h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); max-width: 14ch; margin-bottom: 20px; }
+  .contact-block h2 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); max-width: 15ch; margin-bottom: 20px; }
   .contact-block p.lede { color: var(--ink-soft); max-width: 48ch; margin: 0 0 44px; }
-  .contact-links { display: grid; }
-  .contact-links a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    padding: 20px 2px;
-    border-top: 1px solid var(--border);
-    color: var(--ink);
-    font-family: "Fraunces", serif;
-    font-size: 1.15rem;
-    transition: color 0.15s ease;
+  .contact-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .contact-card {
+    display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink);
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px 20px;
+    transition: border-color 0.15s ease, transform 0.15s ease;
   }
-  .contact-links a:last-child { border-bottom: 1px solid var(--border); }
-  .contact-links a .go { font-family: "Work Sans", sans-serif; font-size: 0.85rem; color: var(--ink-faint); }
-  .contact-links a:hover { color: var(--accent-strong); }
-  :root:not([data-theme="light"]) .contact-links a:hover { color: var(--accent); }
-  :root[data-theme="dark"] .contact-links a:hover { color: var(--accent); }
+  .contact-card:hover { border-color: var(--accent-strong); transform: translateY(-2px); }
+  .contact-card .label { font-weight: 700; font-size: 0.95rem; }
+  .contact-card .sub { font-size: 0.76rem; color: var(--ink-faint); margin-top: 2px; }
 
-  footer {
-    padding: 32px 0 44px;
-    font-size: 0.82rem;
-    color: var(--ink-faint);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+  footer { padding: 34px 0 46px; font-size: 0.84rem; color: var(--ink-faint); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
   footer a { color: var(--ink-faint); text-decoration: none; }
   footer a:hover { color: var(--ink); }
 
-  @media (max-width: 860px) {
+  @media (max-width: 980px) {
+    .hero .wrap { grid-template-columns: 1fr; }
+    .hero-visual { max-width: 420px; }
+    .service-grid, .portfolio-grid { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; }
-    .about-grid .credentials { border-left: none; padding-left: 0; border-top: 1px solid var(--border-strong); padding-top: 22px; }
     .process-list { grid-template-columns: repeat(2, 1fr); }
+    .contact-links { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
     nav.site-nav { display: none; }
-    .repo-card { grid-template-columns: 1fr; }
   }
 </style>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#top">José Neto</a>
+    <a class="brand" href="#top">
+      <span class="mark">JN</span>
+      <span class="name">José Neto</span>
+    </a>
     <nav class="site-nav">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
@@ -351,17 +351,67 @@
 
 <main id="top">
   <section class="hero">
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
     <div class="wrap">
-      <span class="eyebrow">Desenvolvimento sob medida — Web, App e Automação</span>
-      <h1 style="margin-top:18px;">Engenharia de precisão,<br><em>agora em software.</em></h1>
-      <p class="lede">Sou José Gonçalves Neto, engenheiro eletricista com vivência em automação industrial e sistemas críticos. Uso essa mesma exigência técnica para construir sites, aplicativos e automações que resolvem problemas reais do seu negócio.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="#portfolio">Ver portfólio</a>
-        <a class="link-arrow" href="#contato">Falar sobre um projeto →</a>
+      <div>
+        <span class="eyebrow">Web · App · Automação</span>
+        <h1 style="margin-top:16px;">Software bem construído, <span class="accent-text">com rigor de engenharia.</span></h1>
+        <p class="lede">Sou José Gonçalves Neto, engenheiro eletricista com vivência em automação industrial. Uso essa mesma exigência técnica para construir sites, aplicativos e automações que resolvem problemas reais do seu negócio.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#portfolio">Ver portfólio</a>
+          <a class="link-ghost" href="#contato">Falar sobre um projeto</a>
+        </div>
+        <div class="credo">
+          <span>Engenharia Elétrica</span>
+          <span>Automação</span>
+          <span>Software</span>
+        </div>
       </div>
-      <p class="credo">
-        <span>Engenharia Elétrica</span><span>Automação</span><span>Software</span>
-      </p>
+      <div class="hero-visual">
+        <div class="float-card fc1">
+          <span class="icon-badge" style="width:32px;height:32px;border-radius:10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><polyline points="20 6 9 17 4 12"/></svg>
+          </span>
+          Entrega no prazo
+        </div>
+        <div class="mock-window">
+          <div class="mock-topbar">
+            <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+            <span class="mock-address">ordens-de-servico.app</span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-heading">Ordens de Serviço</div>
+            <div class="mock-row">
+              <div>
+                <div class="mock-client">Comércio Vitória Ltda.</div>
+                <div class="mock-sub">Instalação de painel · #128</div>
+              </div>
+              <span class="pill blue">Aberta</span>
+            </div>
+            <div class="mock-row">
+              <div>
+                <div class="mock-client">Auto Peças Bragança</div>
+                <div class="mock-sub">Manutenção preventiva · #127</div>
+              </div>
+              <span class="pill lilac">Em andamento</span>
+            </div>
+            <div class="mock-row">
+              <div>
+                <div class="mock-client">Studio Marena</div>
+                <div class="mock-sub">Revisão elétrica · #126</div>
+              </div>
+              <span class="pill teal">Concluída</span>
+            </div>
+          </div>
+        </div>
+        <div class="float-card fc2">
+          <span class="icon-badge lilac" style="width:32px;height:32px;border-radius:10px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </span>
+          Escopo fechado
+        </div>
+      </div>
     </div>
   </section>
 
@@ -377,17 +427,32 @@
           <p>Trabalho em três frentes: sistemas web, aplicativos mobile e automações. Cada projeto sai com escopo e valor fechados por escrito, para que você saiba exatamente o que está contratando.</p>
         </div>
         <dl class="credentials">
-          <div>
-            <dt>Formação</dt>
-            <dd>Engenharia Elétrica, com pós-graduação em andamento</dd>
+          <div class="credential-row">
+            <span class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
+            </span>
+            <div>
+              <dt>Formação</dt>
+              <dd>Engenharia Elétrica, com pós-graduação em andamento</dd>
+            </div>
           </div>
-          <div>
-            <dt>Experiência técnica</dt>
-            <dd>Automação industrial, SCADA, Java, Python</dd>
+          <div class="credential-row">
+            <span class="icon-badge lilac">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.44.71.74 1.22.9.17.05.34.08.51.1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+            </span>
+            <div>
+              <dt>Experiência técnica</dt>
+              <dd>Automação industrial, SCADA, Java, Python</dd>
+            </div>
           </div>
-          <div>
-            <dt>Stack de desenvolvimento</dt>
-            <dd>Node.js, React, React Native, Python</dd>
+          <div class="credential-row">
+            <span class="icon-badge teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <div>
+              <dt>Stack de desenvolvimento</dt>
+              <dd>Node.js, React, React Native, Python</dd>
+            </div>
           </div>
         </dl>
       </div>
@@ -399,32 +464,32 @@
       <div class="section-head">
         <span class="eyebrow">Serviços</span>
         <h2>Três frentes, um mesmo padrão de entrega.</h2>
-        <p class="section-note">Cada frente tem um projeto de portfólio real, aberto e funcional, linkado adiante.</p>
+        <p class="section-note">Cada frente tem um projeto de portfólio real, aberto e funcional, logo abaixo.</p>
       </div>
-      <div class="service-list">
-        <div class="service-row">
-          <span class="service-num">I.</span>
-          <div>
-            <h3>Sistemas &amp; sites</h3>
-            <p>Sites institucionais, painéis administrativos e sistemas web sob medida — do levantamento de requisitos ao ar, com atenção especial ao design quando a experiência de compra ou de uso for parte do resultado.</p>
-            <span class="stack">Node.js · React · REST API</span>
-          </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <span class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 9h20"/><circle cx="5.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="7.7" cy="6.5" r="0.6" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3>Sistemas &amp; sites</h3>
+          <p>Sites institucionais, painéis administrativos e sistemas web sob medida — do levantamento de requisitos ao ar, com atenção especial ao design quando a experiência de compra ou de uso for parte do resultado.</p>
+          <div class="stack"><span>Node.js</span><span>React</span><span>REST API</span></div>
         </div>
-        <div class="service-row">
-          <span class="service-num">II.</span>
-          <div>
-            <h3>Aplicativos mobile</h3>
-            <p>Apps para Android e iOS, especialmente para equipes que trabalham em campo e precisam de dados em tempo real.</p>
-            <span class="stack">React Native · Expo · Integração via API</span>
-          </div>
+        <div class="service-card">
+          <span class="icon-badge lilac">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          </span>
+          <h3>Aplicativos mobile</h3>
+          <p>Apps para Android e iOS, especialmente para equipes que trabalham em campo e precisam de dados em tempo real.</p>
+          <div class="stack"><span>React Native</span><span>Expo</span><span>Integração via API</span></div>
         </div>
-        <div class="service-row">
-          <span class="service-num">III.</span>
-          <div>
-            <h3>Automações &amp; bots</h3>
-            <p>Chatbots de atendimento e automações que tiram tarefas repetitivas da rotina da sua equipe.</p>
-            <span class="stack">Python · Telegram / WhatsApp · Integrações</span>
-          </div>
+        <div class="service-card">
+          <span class="icon-badge teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a9 9 0 0 0-6.36 15.36L4 22l4.64-1.64A9 9 0 1 0 12 2Z"/><circle cx="8.5" cy="12" r="0.7" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="0.7" fill="currentColor" stroke="none"/><circle cx="15.5" cy="12" r="0.7" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <h3>Automações &amp; bots</h3>
+          <p>Chatbots de atendimento e automações que tiram tarefas repetitivas da rotina da sua equipe.</p>
+          <div class="stack"><span>Python</span><span>Telegram / WhatsApp</span><span>Integrações</span></div>
         </div>
       </div>
     </div>
@@ -438,22 +503,30 @@
       </div>
       <div class="process-list">
         <div class="step">
-          <span class="num">1</span>
+          <span class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </span>
           <h3>Conversa inicial</h3>
           <p>Entendo o problema, o contexto do seu negócio e o que o projeto precisa resolver.</p>
         </div>
         <div class="step">
-          <span class="num">2</span>
+          <span class="icon-badge lilac">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+          </span>
           <h3>Proposta &amp; contrato</h3>
           <p>Escopo, prazo e valor fechados por escrito antes de qualquer linha de código.</p>
         </div>
         <div class="step">
-          <span class="num">3</span>
+          <span class="icon-badge teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </span>
           <h3>Desenvolvimento</h3>
           <p>Construção com pontos de checagem, para você acompanhar o progresso real.</p>
         </div>
         <div class="step">
-          <span class="num">4</span>
+          <span class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+          </span>
           <h3>Entrega &amp; suporte</h3>
           <p>Entrega documentada, com suporte combinado para os ajustes do dia a dia.</p>
         </div>
@@ -465,33 +538,68 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Portfólio</span>
-        <h2>Projetos reais, código aberto.</h2>
-        <p class="section-note">Um sistema completo: painel web para a equipe, app para quem está em campo, e bot para o autoatendimento do cliente.</p>
+        <h2>Um sistema completo, três telas.</h2>
+        <p class="section-note">Painel web para a equipe, app para quem está em campo, e bot para o autoatendimento do cliente — todo o código é aberto no GitHub.</p>
       </div>
-      <div class="repo-list">
-        <a class="repo-card" href="https://github.com/JoseNeto-G/gestao-ordens-servico" target="_blank" rel="noopener">
-          <div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-frame frame-browser">
+            <div class="mock-topbar">
+              <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+              <span class="mock-address">painel</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-heading" style="font-size:0.86rem;">Clientes &amp; chamados</div>
+              <div class="mock-row"><div class="mock-client">Comércio Vitória</div><span class="pill blue">Aberta</span></div>
+              <div class="mock-row"><div class="mock-client">Auto Peças Bragança</div><span class="pill lilac">Em andamento</span></div>
+              <div class="mock-row"><div class="mock-client">Studio Marena</div><span class="pill teal">Concluída</span></div>
+            </div>
+          </div>
+          <div class="portfolio-info">
             <h3>gestao-ordens-servico</h3>
             <p>Painel web para gestão de ordens de serviço: clientes, chamados e status, com autenticação. Node.js + React.</p>
+            <a href="https://github.com/JoseNeto-G/gestao-ordens-servico" target="_blank" rel="noopener">Ver no GitHub →</a>
           </div>
-          <span class="go">Ver no GitHub →</span>
-        </a>
-        <a class="repo-card" href="https://github.com/JoseNeto-G/app-ordens-servico" target="_blank" rel="noopener">
-          <div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-frame frame-phone">
+            <div class="phone-shell">
+              <div class="phone-notch"></div>
+              <div class="phone-card">
+                <span class="name">Comércio Vitória</span>
+                <span class="phone-pill pill blue">Aberta</span>
+              </div>
+              <div class="phone-card">
+                <span class="name">Auto Peças Bragança</span>
+                <span class="phone-pill pill lilac">Em andamento</span>
+              </div>
+              <div class="phone-card">
+                <span class="name">Studio Marena</span>
+                <span class="phone-pill pill teal">Concluída</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
             <h3>app-ordens-servico</h3>
             <p>App mobile para técnicos de campo acompanharem e atualizarem ordens de serviço. React Native.</p>
+            <a href="https://github.com/JoseNeto-G/app-ordens-servico" target="_blank" rel="noopener">Ver no GitHub →</a>
           </div>
-          <span class="go">Ver no GitHub →</span>
-        </a>
-        <a class="repo-card" href="https://github.com/JoseNeto-G/bot-ordens-servico" target="_blank" rel="noopener">
-          <div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-frame frame-chat">
+            <div class="mock-body">
+              <div class="chat-bubble user">status do pedido #127?</div>
+              <div class="chat-bubble bot">Auto Peças Bragança está <strong>em andamento</strong> — previsão de conclusão em 2 dias.</div>
+            </div>
+          </div>
+          <div class="portfolio-info">
             <h3>bot-ordens-servico</h3>
             <p>Bot de atendimento via Telegram que responde dúvidas e consulta o status das ordens. Python.</p>
+            <a href="https://github.com/JoseNeto-G/bot-ordens-servico" target="_blank" rel="noopener">Ver no GitHub →</a>
           </div>
-          <span class="go">Ver no GitHub →</span>
-        </a>
+        </div>
       </div>
-      <p class="portfolio-more"><a class="link-arrow" href="https://github.com/JoseNeto-G" target="_blank" rel="noopener">Ver todos os projetos no GitHub →</a></p>
+      <p style="margin-top:30px;"><a class="link-ghost" href="https://github.com/JoseNeto-G" target="_blank" rel="noopener">Ver todos os projetos no GitHub</a></p>
     </div>
   </section>
 
@@ -501,17 +609,17 @@
       <h2 style="margin-top:14px;">Vamos conversar sobre o seu projeto.</h2>
       <p class="lede">Me conte o que você precisa — web, app ou automação — e eu retorno com os próximos passos e uma proposta com escopo e valor fechados.</p>
       <div class="contact-links">
-        <a href="mailto:netojosegoncalves20@gmail.com">
-          <span>netojosegoncalves20@gmail.com</span>
-          <span class="go">e-mail</span>
+        <a class="contact-card" href="mailto:netojosegoncalves20@gmail.com">
+          <span class="mini-badge">@</span>
+          <div><div class="label">E-mail</div><div class="sub">netojosegoncalves20@gmail.com</div></div>
         </a>
-        <a href="https://www.linkedin.com/in/jose-neto-goncalves/" target="_blank" rel="noopener">
-          <span>LinkedIn</span>
-          <span class="go">perfil</span>
+        <a class="contact-card" href="https://www.linkedin.com/in/jose-neto-goncalves/" target="_blank" rel="noopener">
+          <span class="mini-badge">in</span>
+          <div><div class="label">LinkedIn</div><div class="sub">Perfil profissional</div></div>
         </a>
-        <a href="https://github.com/JoseNeto-G" target="_blank" rel="noopener">
-          <span>GitHub</span>
-          <span class="go">projetos</span>
+        <a class="contact-card" href="https://github.com/JoseNeto-G" target="_blank" rel="noopener">
+          <span class="mini-badge">{ }</span>
+          <div><div class="label">GitHub</div><div class="sub">Todos os projetos</div></div>
         </a>
       </div>
     </div>
